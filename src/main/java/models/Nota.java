@@ -1,15 +1,16 @@
 package src.main.java.models;
 
-import java.util.Date;
+import java.time.LocalDate;
+
 
 public class Nota {
 
     private int id;
-    private Date data;
+    private LocalDate data;
     private float valor;
 
 
-    public Nota(int id, Date data, float valor) {
+    public Nota(int id, LocalDate data, float valor) {
         this.id = id;
         this.data = data;
         this.valor = valor;
@@ -24,7 +25,7 @@ public class Nota {
         return id;
     }
 
-    public Date getData() {
+    public LocalDate getData() {
         return data;
     }
 

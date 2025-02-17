@@ -6,6 +6,7 @@ import src.main.java.models.RelatorioNotasSaida;
 
 import java.util.ArrayList;
 
+
 public class VisitorCSV implements Visitor {
 
     private ArrayList<Nota> notas = new ArrayList<>();

@@ -1,9 +1,11 @@
 package src.main.java.models;
 
+import src.main.java.visitor.Visitor;
+
 import java.util.ArrayList;
 
 
-public class RelatorioNotasEntrada {
+public class RelatorioNotasEntrada implements Relatorio{
 
     private int mes;
     private ArrayList<Nota> notas = new ArrayList<>();
@@ -29,11 +31,11 @@ public class RelatorioNotasEntrada {
         return valorTotal;
     }
 
-    /*
+
     @Override
     public String aceitar(Visitor visitor) {
-        return "";
+        return visitor.gerarRelatorioNotasEntrada(this);
     }
 
-     */
+
 }
